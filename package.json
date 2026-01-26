@@ -2,6 +2,7 @@
   "name": "final-portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://soumik-pramanik.github.io",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -20,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --no-history --no-clean"
   },
   "eslintConfig": {
     "extends": [
