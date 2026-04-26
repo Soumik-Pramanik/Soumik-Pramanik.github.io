@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website with a fixed header and scrollable content.
 
+**Live site:** [soumik-pramanik.github.io](https://soumik-pramanik.github.io)
+
 ## Features
 
 - Fixed navigation header that stays visible while scrolling
@@ -27,23 +29,11 @@ The portfolio will open at [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
 ```bash
-npm run build
+npm run build       # production build
+npm run deploy      # build + push to gh-pages branch on GitHub
 ```
 
-## Project Structure
-
-```
-Final_PF/
-├── public/
-│   └── index.html          # HTML template
-├── src/
-│   ├── App.jsx            # Main app component with all sections
-│   ├── index.jsx          # React entry point
-│   └── index.css          # Tailwind + custom styles
-├── package.json           # Dependencies
-├── tailwind.config.js     # Tailwind configuration
-└── postcss.config.js      # PostCSS configuration
-```
+Deployment uses `gh-pages` and publishes to the `gh-pages` branch of this repository.
 
 ## Customization
 

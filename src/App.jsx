@@ -240,7 +240,9 @@ function App() {
           {/* Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="/Soumik_Pramanik_CV_Offcampus_AI.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300"
             >
               Resume
