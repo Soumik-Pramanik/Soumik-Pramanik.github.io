@@ -157,7 +157,7 @@ function useDarkMode() {
 function Section({ id, title, children }) {
   return (
     <section id={id} className="scroll-mt-24 py-16 md:py-24 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {title && (
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 gradient-text">
             {title}
@@ -245,9 +245,7 @@ function App() {
           {/* Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="/Soumik_Pramanik_CV_Offcampus_AI.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
               className="px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300"
             >
               Resume
@@ -467,6 +465,7 @@ function App() {
             {DATA.experience.map((exp, idx) => (
               <Card key={idx}>
                 <div className="flex gap-4 mb-4">
+                  {/* Company Logo */}
                   {exp.logo && (
                     <div className="flex-shrink-0">
                       <img
@@ -476,6 +475,8 @@ function App() {
                       />
                     </div>
                   )}
+
+                  {/* Content */}
                   <div className="flex-1 flex flex-col md:flex-row md:items-start md:justify-between">
                     <div>
                       <h3 className="text-xl font-bold gradient-text">{exp.company}</h3>
@@ -487,6 +488,7 @@ function App() {
                   </div>
                 </div>
 
+                {/* Multiple roles at same company */}
                 {exp.roles ? (
                   <div className="space-y-6">
                     {exp.roles.map((role, ridx) => (
@@ -508,6 +510,7 @@ function App() {
                     ))}
                   </div>
                 ) : (
+                  /* Single role */
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">{exp.role}</h4>
                     <p className="text-gray-900 dark:text-white mb-4">{exp.description}</p>
